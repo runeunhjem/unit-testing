@@ -12,9 +12,7 @@
     "type": "git",
     "url": "https://github.com/runeunhjem/unit-testing.git"
   },
-  "keywords": [
-    "Jest"
-  ],
+  "keywords": ["Jest"],
   "author": "Rune Unhjem <runeunhjem@gmail.com>",
   "license": "ISC",
   "devDependencies": {
@@ -27,7 +25,7 @@
     "node-localstorage": "^3.0.5"
   },
   "jest": {},
-  "eslint": {
+  "eslintConfig": {
     "env": {
       "browser": true,
       "es2021": true
@@ -35,21 +33,11 @@
     "extends": "eslint:recommended",
     "overrides": [
       {
-        "files": [
-          "**/*.test.js"
-        ],
-        "env": {
-          "jest": true
-        },
-        "plugins": [
-          "jest"
-        ],
-        "extends": [
-          "plugin:jest/recommended"
-        ],
-        "rules": {
-          "jest/prefer-expect-assertions": "off"
-        }
+        "files": ["**/*.test.js"],
+        "env": { "jest": true },
+        "plugins": ["jest"],
+        "extends": ["plugin:jest/recommended"],
+        "rules": { "jest/prefer-expect-assertions": "off" }
       }
     ],
     "parserOptions": {

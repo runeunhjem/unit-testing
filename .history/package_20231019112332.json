@@ -27,35 +27,7 @@
     "node-localstorage": "^3.0.5"
   },
   "jest": {},
-  "eslint": {
-    "env": {
-      "browser": true,
-      "es2021": true
-    },
-    "extends": "eslint:recommended",
-    "overrides": [
-      {
-        "files": [
-          "**/*.test.js"
-        ],
-        "env": {
-          "jest": true
-        },
-        "plugins": [
-          "jest"
-        ],
-        "extends": [
-          "plugin:jest/recommended"
-        ],
-        "rules": {
-          "jest/prefer-expect-assertions": "off"
-        }
-      }
-    ],
-    "parserOptions": {
-      "ecmaVersion": "latest",
-      "sourceType": "module"
-    },
-    "rules": {}
+  "eslintConfig": {
+    
   }
 }
