@@ -26,6 +26,9 @@
     "jest-fetch-mock": "^3.0.3",
     "node-localstorage": "^3.0.5"
   },
+  "jest": {
+    "type": ""
+  },
   "eslint": {
     "env": {
       "browser": true,

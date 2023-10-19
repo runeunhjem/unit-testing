@@ -6,7 +6,7 @@
   "extends": "eslint:recommended",
   "overrides": [
     {
-      "files": ["**/*.test.js", "**/*.test.mjs"],
+      "files": ["**/*.test.js", "**"],
       "env": {
         "jest": true
       },
