@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "npm run test-unit",
-    "test-unit": "jest",
-    "cytest": "npm run test-e2e",
+    "test-unit": "jest"
+    "test": "npm run test-e2e",
     "test-e2e": "cypress open"
   },
   "repository": {
