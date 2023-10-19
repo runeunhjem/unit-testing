@@ -1,0 +1,19 @@
+class User {
+  constructor(firstName, lastName, age) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+  }
+
+  getFullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+
+  getAge() {
+    return this.age;
+  }
+}
+
+export default User;
+
+describe("User", () => {
