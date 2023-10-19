@@ -12,9 +12,7 @@
     "type": "git",
     "url": "https://github.com/runeunhjem/unit-testing.git"
   },
-  "keywords": [
-    "Jest"
-  ],
+  "keywords": ["Jest"],
   "author": "Rune Unhjem <runeunhjem@gmail.com>",
   "license": "ISC",
   "devDependencies": {
@@ -42,12 +40,8 @@
         "env": {
           "jest": true
         },
-        "plugins": [
-          "jest"
-        ],
-        "extends": [
-          "plugin:jest/recommended"
-        ],
+        "plugins": ["jest"],
+        "extends": ["plugin:jest/recommended"],
         "rules": {
           "jest/prefer-expect-assertions": "off"
         }

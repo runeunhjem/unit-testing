@@ -2,7 +2,7 @@
   "name": "unit-testing",
   "version": "0.0.1",
   "description": "Test of Unit Testing",
-  "main": "index.js",
+  "main": "index.mjs", // Changed the main file extension to ".mjs"
   "type": "module",
   "scripts": {
     "test": "npm run test-unit",
@@ -12,9 +12,7 @@
     "type": "git",
     "url": "https://github.com/runeunhjem/unit-testing.git"
   },
-  "keywords": [
-    "Jest"
-  ],
+  "keywords": ["Jest"],
   "author": "Rune Unhjem <runeunhjem@gmail.com>",
   "license": "ISC",
   "devDependencies": {
@@ -42,12 +40,8 @@
         "env": {
           "jest": true
         },
-        "plugins": [
-          "jest"
-        ],
-        "extends": [
-          "plugin:jest/recommended"
-        ],
+        "plugins": ["jest"],
+        "extends": ["plugin:jest/recommended"],
         "rules": {
           "jest/prefer-expect-assertions": "off"
         }
