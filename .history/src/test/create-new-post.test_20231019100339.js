@@ -1,5 +1,5 @@
 /* global global */
-import { createNewPost } from "./create-new-post.mjs";
+import { createNewPost } from "./create-new-post.js";
 
 global.fetch = require("node-fetch"); // For mocking fetch
 

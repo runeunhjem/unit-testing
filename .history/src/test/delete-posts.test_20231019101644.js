@@ -1,17 +1,22 @@
 /* global global */
-import { deletePost } from "./delete-posts.mjs";
+import { deletePost } from "./delete-posts.js";
+import { LocalStorage } from "node-localstorage";
+import fetchMock from "jest-fetch-mock"; // Import 'jest-fetch-mock'
+
+fetchMock.enableMocks(); // Enable fetch mocking
+const localStorage = new LocalStorage("./scratch");
 
 global.fetch = require("node-fetch"); // For mocking fetch
 
 describe("deletePost", () => {
   beforeEach(() => {
     // Clear any mocked fetch calls before each test
-    fetch.resetMocks();
+    fetchMock.resetMocks();
   });
 
   it("should delete a post when authorized", async () => {
     // Mock a successful response
-    fetch.mockResponse(JSON.stringify({ message: "Post deleted successfully" }), {
+    fetchMock.mockResponse(JSON.stringify({ message: "Post deleted successfully" }), {
       status: 200, // Simulating a successful deletion response
     });
 
@@ -25,7 +30,7 @@ describe("deletePost", () => {
 
   it("should not delete a post when not authorized", async () => {
     // Mock an unsuccessful response
-    fetch.mockResponse("You can only delete your own posts.", { status: 403 });
+    fetchMock.mockResponse("You can only delete your own posts.", { status: 403 });
 
     localStorage.setItem("authorName", "anotherUser"); // Simulate a different user
 
@@ -39,7 +44,7 @@ describe("deletePost", () => {
 
   it("should handle network errors", async () => {
     // Mock a network error
-    fetch.mockReject(new Error("Network error"));
+    fetchMock.mockReject(new Error("Network error"));
 
     localStorage.setItem("authorName", "loggedInUser"); // Simulate logged-in user
 

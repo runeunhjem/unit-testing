@@ -1,5 +1,11 @@
-import { loginUser } from "./login.mjs";
+import { loginUser } from "./login.js";
 import fetchMock from "jest-fetch-mock";
+import { LocalStorage } from "node-localstorage";
+import fetchMock from "jest-fetch-mock"; // Import 'jest-fetch-mock'
+
+fetchMock.enableMocks(); // Enable fetch mocking
+
+const localStorage = new LocalStorage("./scratch");
 
 fetchMock.enableMocks();
 
