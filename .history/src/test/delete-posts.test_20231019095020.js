@@ -1,5 +1,5 @@
 /* global global */
-import { deletePost } from "./delete-posts.mjs";
+import { deletePost } from "./";
 
 global.fetch = require("node-fetch"); // For mocking fetch
 
