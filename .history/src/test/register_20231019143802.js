@@ -28,10 +28,7 @@ function submitRegistrationForm() {
   console.log("Registration form submitted.");
 
   // Intentionally logging twice to get error in test
-  console.log("Registration form submitted.");
-
-  // Intentionally logging twice to get error in test
-  console.log("Registration form for third time.");
+  
 }
 
 export { registerUser, submitRegistrationForm };
