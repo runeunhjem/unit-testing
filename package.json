@@ -1,0 +1,26 @@
+{
+  "name": "unit-testing",
+  "version": "0.0.1",
+  "description": "Test of Unit Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test-unit",
+    "test-unit": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "unit-testing"
+  },
+  "keywords": [
+    "Jest"
+  ],
+  "author": "Rune Unhjem <runeunhjem@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "eslint": "^8.51.0",
+    "eslint-plugin-jest": "^27.4.2",
+    "jest": "^29.2.0"
+  }
+}

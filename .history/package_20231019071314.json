@@ -1,0 +1,21 @@
+{
+  "name": "unit-testing",
+  "version": "0.0.1",
+  "description": "Test of Unit Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "unit-testing"
+  },
+  "keywords": [
+    "Jest"
+  ],
+  "author": "Rune Unhjem <runeunhjem@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.2.0"
+  }
+}
