@@ -9,8 +9,7 @@
     "test-unit": "jest",
     "cytest": "npm run test-e2e",
     "test-e2e": "cypress open",
-    "test-e2e-report": "cypress run --reporter mochawesome",
-    "test-e2e-cli": "cypress run"
+    
   },
   "repository": {
     "type": "git",
